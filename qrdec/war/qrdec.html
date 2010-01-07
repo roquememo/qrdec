@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">	
+   
+<!-- 
+		Smart developers always View Source. 
+		
+		This application was built using Adobe Flex, an open source framework
+		for building rich Internet applications that get delivered via the
+		Flash Player or to desktops via Adobe AIR. 
+		
+		Learn more about Flex at http://flex.org 
+// -->
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>qrdec/qrread</title>
+	<script type="text/javascript" language="javascript" src="qrdec/qrdec.nocache.js"></script>
+
+    <style type="text/css" media="screen"> 
+			html, body { margin:0; padding:0; overflow:auto; text-align:center; background-color: #fff; }
+			#header { background-color: #e6f1f8; }
+			#header .wrap h1
+			{
+				margin: 0px;
+				padding: 10px 0px 10px 0px;
+				text-align: left;
+				font-size: 16px;
+			}
+			.wrap
+			{
+				font-family: Arial;
+				width: 780px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			#content { margin-top: 14px; height: 320px; }
+			#content .wrap h2 { margin: 0px; padding: 0px; font-size: 15px; }
+
+			.left { text-align: left; float: left; }
+			#flashContent { display:none; }
+			.decoded { color: #197b30; font-size: 18px; font-weight: bold;}
+    </style> 
+  
+    <script type="text/javascript" src="swfobject.js"></script>
+    <script type="text/javascript">
+        var swfVersionStr = "10.0.0";
+        var xiSwfUrlStr = "playerProductInstall.swf";
+        var flashvars = {};
+        var params = {};
+        params.quality = "high";
+        params.bgcolor = "#000000";
+        params.allowscriptaccess = "sameDomain";
+        params.allowfullscreen = "true";
+        var attributes = {};
+        attributes.id = "qrread";
+        attributes.name = "qrread";
+        attributes.align = "middle";
+        swfobject.embedSWF(
+            "qrread.swf", "flashContent", 
+            "320", "320", 
+            swfVersionStr, xiSwfUrlStr, 
+            flashvars, params, attributes);
+				swfobject.createCSS(
+						"#flashContent",
+						"display:block;text-align:left;");
+    </script>
+
+</head>
+
+<body>
+
+	<div id="header">
+		<div class="wrap">
+			<h1>qrdec/qrread</h1>
+		</div>
+	</div>
+	
+	<div id="content">
+		<div class="wrap">
+			<div class="left">
+				<div id="flashContent">
+				 	<p>
+				  	To view this page ensure that Adobe Flash Player version 10.0.0 or greater is installed. 
+					</p>
+					<a href="http://www.adobe.com/go/getflashplayer">
+						<img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash Player" />
+					</a>
+					<noscript>
+					    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="100%" height="100%" id="qrread">
+					        <param name="movie" value="qrread.swf" />
+					        <param name="quality" value="high" />
+					        <param name="bgcolor" value="#000000" />
+					        <param name="allowScriptAccess" value="sameDomain" />
+					        <param name="allowFullScreen" value="true" />
+					        <!--[if !IE]>
+					        <object type="application/x-shockwave-flash" data="qrread.swf" width="100%" height="100%">
+				            <param name="quality" value="high" />
+				            <param name="bgcolor" value="#000000" />
+				            <param name="allowScriptAccess" value="sameDomain" />
+				            <param name="allowFullScreen" value="true" />
+					        <![endif]-->
+					        <!--[if gte IE 6]>
+					        	<p> 
+					        		Either scripts and active content are not permitted to run or Adobe Flash Player version
+					        		10.0.0 or greater is not installed.
+					        	</p>
+					        <![endif]-->
+				            <a href="http://www.adobe.com/go/getflashplayer">
+				                <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash Player" />
+				            </a>
+					        <!--[if !IE]>
+					        </object>
+					        <![endif]-->
+					        </object>
+					 	</noscript>
+			   </div>
+			   <div style="margin-top: 14px;">
+				<a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons</a> &mdash; <a href="http://code.google.com/p/qrdec/">Source</a>
+				</div>
+
+		   </div>
+		   <div class="left" style="margin-left: 14px; width: 440px;">
+		   		<h2>QR Code Decoder / Reader</h2>
+		   		<p>This demo shows how to read and decode <a href="http://en.wikipedia.org/wiki/QR_Code">QR Code</a> using <a href="http://code.google.com/p/zxing/">ZXing</a> library on <a href="http://code.google.com/webtoolkit/">Google Web Toolkit</a> and <a href="http://www.adobe.com/products/flash/">Adobe Flash</a> plugin.</p>
+				<h2>How does it work?</h2>
+				<p>You need to use your camera to capture a code. <br />Here is a QR Code Generator: <a href="http://zxing.appspot.com/">http://zxing.appspot.com/</a></p>
+				<p>&mdash;</p>
+				<div id="resultView">
+				</div>
+		   </div>
+	   </div>
+   </div>
+
+  </body>
+   
+</html>
