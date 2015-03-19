@@ -1,0 +1,1 @@
+This demo shows how to read and decode QR Code using ZXing library on Google Web Toolkit and Adobe Flash plugin.
